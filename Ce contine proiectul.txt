@@ -1,0 +1,17 @@
+• Aplicația trebuie sa fie funcționala si să ruleze pe un localhost (node intregration,
+etc.).
+• Codul trebuie să fie încărcat si accesibil pe un GitHub/Bitbucket, pentru a îl putea
+clona și rula.
+• Aplicația trebuie legata la un Weather API, pentru a avea data reale in aplicație.
+(datele inițiale ar trebui să fie cu locația actuala)
+• Aplicația trebuie să fie responsive pentru Desktop cât și pentru Mobile.
+• Folosirea semantică a elementelor Web.
+
+Optional:
+Aplicația ar trebui să permită vizualizarea mai multor orașe.
+Aplicația ar trebui să aibă mai multe Teme (themes/desings). (day, night, rain, etc.)
+
+Nu am adaugat:
+Aplicația ar trebui să permită adăugarea unor orașe ca Favorite.
+Aplicația ar trebui să permită utilizatorului să facă forecast pe mai multe zile/ore. (nu
+mai mult de 7 zile, si nu mai mult de 24 ore)

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Weather API</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Weather</a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#parent">Weather Search</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+        </ul>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <img
+      src="https://ps.w.org/owm-weather/assets/banner-1544x500.png?rev=2589203"
+      alt="Cloud banner"
+    />
+
+    <section class="container">
+      <div class="card">
+        <div class="card-image img-1"></div>
+        <h2><b>Happy Day</b></h2>
+        <p>
+          Every day should be a happy day, because we still can see the beauty
+          of this weather thing
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-image img-2"></div>
+        <h2><b>Holidays!</b></h2>
+        <p>
+          We can help you decide if you want to go or not in a holiday, depend
+          on the weather outside
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-image img-3"></div>
+        <h2><b>Home Time</b></h2>
+        <p>
+          It's cold/rainy outside. We recommend you doing something inside to
+          keep you healthy!
+        </p>
+      </div>
+    </section>
+    <div class="map">
+      <h1>Live Map</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21797.6019194689!2d-118.99262173519112!3d37.6245918460962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809b0a8b8572aa35%3A0xf19c7b32f19982d2!2sMammoth%20Lakes%2C%20CA%2093556%2C%20USA!5e0!3m2!1sen!2sin!4v1649386050895!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div id="about" class="about">
+      <h1>Weather's About</h1>
+      <p>
+        You are here on WEATHER site and we are happy that you chose our site.
+        Here we will provide for your the most accurate climate all over the
+        world. I know that sounds amazing. Go on and try it! I hope you'll love
+        it :)
+      </p>
+    </div>
+    <div class="parent" id="parent">
+      <div class="input">
+        <form action="/" method="post">
+          <label for="cityInput"><a href="#"> The weather </a></label>
+          <p>Paste this in search bar: <i>http://localhost:3000/</i></p>
+        </form>
+      </div>
+    </div>
+
+    <h1 id="contact-us" class="header1">Contact us</h1>
+    <form action="/" method="post">
+      <label for="nameInput">Name:</label>
+      <input id="nameInput" type="text" name="name" required />
+
+      <label for="emailInput">Email:</label>
+      <input id="emailInput" type="text" name="email" required />
+
+      <label for="messageInput">Message:</label>
+      <textarea id="messageInput" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <script src="app.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>
